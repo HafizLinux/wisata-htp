@@ -19,3 +19,14 @@ Route::get('/', function () {
     return view('index');
 });
 //landing page
+
+
+// Auth page
+Route::get('/auth', function () {
+    return view('login');
+});
+
+Route::get('/auth', function () {
+    return view('register');
+});
+// Auth page
