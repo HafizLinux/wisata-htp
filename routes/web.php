@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// landing page
 Route::get('/', function () {
     return view('index');
 });
+//landing page
