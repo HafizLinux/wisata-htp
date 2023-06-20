@@ -9,7 +9,7 @@
                                 Dashboard
                             </a>
                             <div class="sb-sidenav-menu-heading">Interface</div>
-                            @if(Auth::user()->role == 'admin')
+                            
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Master Data
@@ -17,10 +17,8 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{url('admin/pengunjung')}}">Data Pengunjung</a>
-                                    <a class="nav-link" href="{{url('admin/divisi')}}">Data Admin</a>
                                     <a class="nav-link" href="{{url('admin/wisata')}}">Data Wisata</a>
-                                    <a class="nav-link" href="{{url('admin/user')}}">Data Pengguna</a>
+                                    <a class="nav-link" href="#">Data Pengguna</a>
                                     <a class="nav-link" href="{{url('admin/ulasan')}}">Data Ulasan</a>
                                     <a class="nav-link" href="{{url('admin/rating')}}">Data Rating</a>
                                     <a class="nav-link" href="index.php?url=kartu">Data</a>
@@ -28,7 +26,7 @@
                                     <a class="nav-link" href="index.php?url=contact">Kontak</a>
                                 </nav>
                             </div>
-                            @endif
+                          
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Halaman
