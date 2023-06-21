@@ -39,7 +39,7 @@
                 <img src="{{asset('frontend/images/img_1.jpg')}}" alt="Image" class="img-fluid">
               </div>
               <div class="listing-item-content">
-                <a class="px-3 mb-3 category bg-primary" href="#">$200.00</a>
+                <a class="px-3 mb-3 category bg-primary" href="#">$2004.00</a>
                 <h2 class="mb-1"><a href="trip-single.html">Dignissimos debitis</a></h2>
               </div>
             </div>
@@ -48,11 +48,11 @@
           <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
             <div class="listing-item">
               <div class="listing-image">
-                <img src="{{asset('frontend/images/mg_2.jpg')}}" alt="Image" class="img-fluid">
+                <img src="{{asset('frontend/images/img_1.jpg')}}" alt="Image" class="img-fluid">
               </div>
               <div class="listing-item-content">
-                <a class="px-3 mb-3 category bg-primary" href="#">$390.00</a>
-                <h2 class="mb-1"><a href="trip-single.html">Consectetur adipisicing</a></h2>
+                <a class="px-3 mb-3 category bg-primary" href="#">$2004.00</a>
+                <h2 class="mb-1"><a href="trip-single.html">Dignissimos debitis</a></h2>
               </div>
             </div>
           </div>

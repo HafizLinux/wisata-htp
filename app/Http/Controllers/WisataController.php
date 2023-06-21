@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Wisata;
 use Illuminate\Support\Facades\DB;
 use PDF;
-use RealRashid\SweetAlert\Facades\Alert;
+// use RealRashid\SweetAlert\Facades\Alert;
 
 class WisataController extends Controller
 {
@@ -64,7 +64,7 @@ class WisataController extends Controller
 
 
         ]);
-        Alert::success('Wisata', 'Berhasil menambahkan data wisata');
+        // Alert::success('Wisata', 'Berhasil menambahkan data wisata');
         return redirect('admin/wisata');
     }
 
@@ -128,7 +128,7 @@ class WisataController extends Controller
 
 
         ]);
-        Alert::info('Wisata', 'Berhasil Mengedit data wisata');
+        // Alert::info('Wisata', 'Berhasil Mengedit data wisata');
         return redirect('admin/wisata');
     }
 
@@ -139,7 +139,7 @@ class WisataController extends Controller
     {
         //
         DB::table('table_wisata')->where('id', $id)->delete();
-        Alert::info('Wisata', 'Berhasil Menghapus data wisata');
+        // Alert::info('Wisata', 'Berhasil Menghapus data wisata');
         return redirect('admin/wisata');
     }
 }

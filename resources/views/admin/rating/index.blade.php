@@ -54,10 +54,10 @@
     </div>
     <div class="card-header">
                             <a href="{{url('admin/rating/ratingPDF')}}" class="btn btn-danger btn-sm" target="_blank">Eksport PDF</a>
-                            <a href="{{url('admin/rating/exportexcel')}}" class="btn btn-success btn-sm">Eksport To Excel</a>
+                            <!-- <a href="{{url('admin/rating/exportexcel')}}" class="btn btn-success btn-sm">Eksport To Excel</a>
                             <button type="button" class="btn  btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">
                              Import To excel
-                            </button>
+                            </button> -->
                             </div>
     <div class="card-body">
         <table id="datatablesSimple">

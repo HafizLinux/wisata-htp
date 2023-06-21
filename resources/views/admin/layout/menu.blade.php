@@ -21,9 +21,9 @@
                                     <a class="nav-link" href="#">Data Pengguna</a>
                                     <a class="nav-link" href="{{url('admin/ulasan')}}">Data Ulasan</a>
                                     <a class="nav-link" href="{{url('admin/rating')}}">Data Rating</a>
-                                    <a class="nav-link" href="index.php?url=kartu">Data</a>
+                                    <!-- <a class="nav-link" href="index.php?url=kartu">Data</a>
                                     <a class="nav-link" href="index.php?url=about">Tentang</a>
-                                    <a class="nav-link" href="index.php?url=contact">Kontak</a>
+                                    <a class="nav-link" href="index.php?url=contact">Kontak</a> -->
                                 </nav>
                             </div>
                           
