@@ -71,7 +71,7 @@ class WisataController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show( $id)
     {
         //
         $wisata = DB::table('table_wisata')->where('id', $id)->get();
@@ -94,7 +94,7 @@ class WisataController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request)
     {
         //
         $request->validate([

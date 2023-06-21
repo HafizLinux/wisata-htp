@@ -64,14 +64,14 @@ class UlasanController extends Controller
             'wisata_id'=> $request->wisata_id,
             // 'tanggal' => $request->tanggal,
         ]);
-        Alert::success('Ulasan', 'Berhasil menambahkan data ulasan');
+        // Alert::success('Ulasan', 'Berhasil menambahkan data ulasan');
         return redirect('admin/ulasan');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show( $id)
     {
         //
         $ulasan = Ulasan::join('table_pengunjung', 'table_ulasan.pengunjung_id', '=', 'table_pengunjung.id')
@@ -98,7 +98,7 @@ class UlasanController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request)
     {
         //
         $request->validate([
@@ -114,7 +114,7 @@ class UlasanController extends Controller
             'wisata_id'=> $request->wisata_id,
             // 'tanggal' => $request->tanggal,
         ]);
-        Alert::info('Ulasan', 'Berhasil Mengedit data ulasan');
+        // Alert::info('Ulasan', 'Berhasil Mengedit data ulasan');
         return redirect('admin/ulasan');
     }
 
@@ -125,7 +125,7 @@ class UlasanController extends Controller
     {
         //
         DB::table('table_ulasan')->where('id', $id)->delete();
-        Alert::info('Ulasan', 'Berhasil Menghapus data ulasan');
+        // Alert::info('Ulasan', 'Berhasil Menghapus data ulasan');
         return redirect('admin/ulasan');
     }
 }
