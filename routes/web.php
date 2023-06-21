@@ -5,6 +5,12 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\WisataController;
 use App\Http\Controllers\UlasanController;
 use App\Http\Controllers\RatingController;
+use App\Http\Controllers\FrontController;
+use App\Http\Controllers\RatingsController;
+use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\TentangController;
+use App\Http\Controllers\TripsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,11 +24,18 @@ use App\Http\Controllers\RatingController;
 
 
 // landing page
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 //landing page
-
+Route::get('/', function () {
+    return view('front');
+});
+Route::get('/front', [TentangController::class, 'index']);
+Route::get('/tentang', [TentangController::class, 'index']);
+Route::get('/trips', [TripsController::class, 'index']);
+Route::get('/review', [ReviewController::class, 'index']);
+Route::get('/ratings', [RatingsController::class, 'index']);
 
 // Auth page
 Route::get('/auth', function () {
