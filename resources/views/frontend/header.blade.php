@@ -66,6 +66,8 @@
                   <li><a href="{{url('/trips')}}" class="nav-link">Wisata</a></li>
                   <li><a href="{{url('/review')}}" class="nav-link">Ulasan</a></li>
                   <li><a href="{{url('/ratings')}}" class="nav-link">Rating</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="">Login</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="">Register</a></li>
                 </ul>
               </nav>
             </div>
