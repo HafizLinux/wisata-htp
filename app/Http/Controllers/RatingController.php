@@ -52,7 +52,7 @@ class RatingController extends Controller
             'wisata_id'=> $request->wisata_id,
            
         ]);
-        Alert::success('Rating', 'Berhasil menambahkan data rating');
+        // Alert::success('Rating', 'Berhasil menambahkan data rating');
         return redirect('admin/rating');
     }
 
@@ -86,7 +86,7 @@ class RatingController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request)
     {
         //
         DB::table('table_rating')->where('id', $request->id)->update([
@@ -95,7 +95,7 @@ class RatingController extends Controller
             'wisata_id'=> $request->wisata_id,
             'nama' => $request->nama,
         ]);
-        Alert::info('Rating', 'Berhasil Mengedit data rating');
+        // Alert::info('Rating', 'Berhasil Mengedit data rating');
         return redirect('admin/rating');
     }
 
@@ -106,7 +106,7 @@ class RatingController extends Controller
     {
         //
         DB::table('table_rating')->where('id', $id)->delete();
-        Alert::info('Rating', 'Berhasil Menghapus data rating');
+        // Alert::info('Rating', 'Berhasil Menghapus data rating');
         return redirect('admin/rating');
     }
 }
