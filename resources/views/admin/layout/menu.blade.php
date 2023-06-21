@@ -18,16 +18,16 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="{{url('admin/wisata')}}">Data Wisata</a>
-                                    <a class="nav-link" href="#">Data Pengguna</a>
+                                    <a class="nav-link" href="{{url('admin/user')}}">Data Pengguna</a>
                                     <a class="nav-link" href="{{url('admin/ulasan')}}">Data Ulasan</a>
-                                    <a class="nav-link" href="{{url('admin/rating')}}">Data Rating</a>
-                                    <a class="nav-link" href="index.php?url=kartu">Data</a>
+                                    <!-- <a class="nav-link" href="{{url('admin/rating')}}">Data Rating</a> -->
+                                    <!-- <a class="nav-link" href="index.php?url=kartu">Data</a>
                                     <a class="nav-link" href="index.php?url=about">Tentang</a>
-                                    <a class="nav-link" href="index.php?url=contact">Kontak</a>
+                                    <a class="nav-link" href="index.php?url=contact">Kontak</a> -->
                                 </nav>
                             </div>
                           
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Halaman
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -66,12 +66,12 @@
                             <a class="nav-link" href="tables.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tables
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as: {{ Session::get('role_admin') }}</div>
-                        Start Bootstrap
+                        GoVocation
                     </div>
                 </nav>
             </div>

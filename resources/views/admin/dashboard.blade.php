@@ -12,16 +12,16 @@
             <div class="row">
                 <div class="col-xl-3 col-md-6">
                     <div class="card bg-primary text-white mb-4">
-                        <div class="card-body">Data Admin :
-                            
+                        <div class="card-body">Data Pengguna :
+                        {{ $totalUsers }}
                         </div>
                         <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <a class="small text-white stretched-link" href="{{url('admin/user')}}">View Details</a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6">
+                <!-- <div class="col-xl-3 col-md-6">
                     <div class="card bg-warning text-white mb-4">
                         <div class="card-body">Data Pengunjung  :
                             
@@ -31,7 +31,7 @@
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-xl-3 col-md-6">
                     <div class="card bg-success text-white mb-4">
                         <div class="card-body">Data Wisata :
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6">
+                <!-- <div class="col-xl-3 col-md-6">
                     <div class="card bg-success text-white mb-4">
                         <div class="card-body">Data Rating :
                             
@@ -64,7 +64,7 @@
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             <div class="row">
                 <div class="col-xl-6">
                     <div class="card mb-4">
@@ -72,7 +72,7 @@
                         <!-- paste pie -->
                         <div class="card-header">
                             <i class="fas fa-chart-pie me-1"></i>
-                            Diagram Rating
+                            Diagram Tempat Wisata
                         </div>
                         <div class="card-body"><canvas id="pieChart" width="100%" height="50"></canvas></div>
                         <!-- <div class="card-header">
@@ -86,7 +86,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-chart-bar me-1"></i>
-                            Diagram Pengunjung
+                            Diagram Pengguna
                         </div>
                         <div class="card-body"><canvas id="pieChart1" width="100%" height="50"></canvas></div>
                     </div>
@@ -98,9 +98,9 @@
 
 
 // Bar Chart Example
-var lbl21 = [@foreach ($ar_wilayah as $wilayah) '{{$wilayah->jk}}',
+var lbl21 = [@foreach ($ar_user as $user) '{{$user->role}}',
 @endforeach];
-var jml1 = [@foreach($ar_wilayah as $wilayah) {{$wilayah->jumlah}},
+var jml1 = [@foreach($ar_user as $user) {{$user->jumlah}},
  @endforeach];
 document.addEventListener("DOMContentLoaded", () => {
     new Chart(document.querySelector('#pieChart1'), {
@@ -119,9 +119,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <script>
 //             var ctx = document.getElementById("myPieChart");
 // var myPieChart = new Chart(ctx, 
-var lbl2 = [@foreach ($ar_komentar as $komentar) '{{$komentar->nama}}',
+var lbl2 = [@foreach ($ar_wilayah as $wilayah) '{{$wilayah->kota}}',
 @endforeach];
-var jml = [@foreach($ar_komentar as $komentar) {{$komentar->jumlah}}, @endforeach];
+var jml = [@foreach($ar_wilayah as $wilayah) {{$wilayah->jumlah}}, @endforeach];
 document.addEventListener("DOMContentLoaded", () => {
     new Chart(document.querySelector('#pieChart'), {
   type: 'pie',

@@ -11,6 +11,7 @@ use App\Http\Controllers\RatingsController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\TentangController;
 use App\Http\Controllers\TripsController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -91,5 +92,7 @@ Route::prefix('admin')->name('admin.')->group(function(){
         Route::get('/rating/show/{id}', [RatingController::class, 'show']);
         Route::get('/rating/delete/{id}', [RatingController::class,'destroy']);
         Route::get('/rating/export-rating-pdf', [RatingController::class, 'exportPDF'])->name('export_rating.pdf');
+
+        Route::get('/user', [UserController::class, 'index']);
     });
 });
