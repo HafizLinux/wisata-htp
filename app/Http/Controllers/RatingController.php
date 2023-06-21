@@ -8,7 +8,7 @@ use App\Models\Pengunjung;
 use App\Models\Wisata;
 use App\Models\Rating;
 use RealRashid\SweetAlert\Facades\Alert;
-
+use Barryvdh\DomPDF\Facade\PDF;
 
 class RatingController extends Controller
 {
@@ -52,7 +52,7 @@ class RatingController extends Controller
             'wisata_id'=> $request->wisata_id,
            
         ]);
-        // Alert::success('Rating', 'Berhasil menambahkan data rating');
+        Alert::success('Rating', 'Berhasil menambahkan data rating');
         return redirect('admin/rating');
     }
 
@@ -86,7 +86,7 @@ class RatingController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request)
+    public function update(Request $request, string $id)
     {
         //
         DB::table('table_rating')->where('id', $request->id)->update([
@@ -95,7 +95,7 @@ class RatingController extends Controller
             'wisata_id'=> $request->wisata_id,
             'nama' => $request->nama,
         ]);
-        // Alert::info('Rating', 'Berhasil Mengedit data rating');
+        Alert::info('Rating', 'Berhasil Mengedit data rating');
         return redirect('admin/rating');
     }
 
@@ -106,7 +106,18 @@ class RatingController extends Controller
     {
         //
         DB::table('table_rating')->where('id', $id)->delete();
-        // Alert::info('Rating', 'Berhasil Menghapus data rating');
+        Alert::info('Rating', 'Berhasil Menghapus data rating');
         return redirect('admin/rating');
+    }
+
+    public function exportPDF() {
+        $data = Rating::join('table_pengunjung', 'table_rating.pengunjung_id', '=', 'table_pengunjung.id')
+        ->join('table_wisata', 'table_rating.wisata_id', '=', 'table_wisata.id')
+        ->select('table_rating.*', 'table_pengunjung.nama as pengunjung', 'table_wisata.nama as wisata')
+        ->get();
+    
+        $pdf = Pdf::loadView('admin.rating.ratingPDF', compact('data'));
+
+        return $pdf->download('export_rating.pdf');
     }
 }

@@ -5,15 +5,35 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="heading-39101 mb-5">
-              <span class="backdrop">US</span>
-              <span class="subtitle-39191">About</span>
-              <h3>GoVacation</h3>
+              <span class="backdrop">Story</span>
+              <span class="subtitle-39191">Tentang</span>
+              <h3>Tentang Website ini</h3>
             </div>
-            <p>With us, have a worry-free vacation! We are a travel website that offers fantastic trip suggestions. Explore intriguing locations all throughout Indonesia and treat yourself to memorable experiences. 
-              The helpful staff is prepared to help you choose your location. Your trip will be extraordinary if you go with us!</p>
+            <p>Sistem informasi pariwisata merupakan solusi modern yang memudahkan perjalanan dan pengalaman wisata.</p>
+            <p>Dengan teknologi terkini, sistem ini menyediakan informasi lengkap tentang destinasi wisata, atraksi, akomodasi, kuliner, dan aktivitas lainnya, secara mudah diakses melalui aplikasi atau situs web.</p>
           </div>
           <div class="col-md-6" data-aos="fade-right">
-            <img src="{{asset('frontend/images/logoabs.svg')}}" alt="Image" class="img-fluid">
+            <img src="{{asset('frontend/images/traveler.jpg')}}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 order-2 ml-auto">
+            <div class="heading-39101 mb-5">
+              <span class="backdrop">Mission</span>
+              <span class="subtitle-39191">Our Mission</span>
+              <h3>Our Mission</h3>
+            </div>
+            <p>Temukan Destinasi Impian Anda dalam Genggaman Anda.</p>
+            <p>Menikmati Petualangan Tak Terlupakan: Wisata adalah Ajang untuk Menciptakan Kenangan dan Cerita yang Akan Dikenang Selamanya.</p>
+          </div>
+          <div class="col-md-6 order-1" data-aos="fade-left">
+            <img src="{{asset('frontend/images/hero_1.jpg')}}" alt="Image" class="img-fluid">
           </div>
         </div>
       </div>
@@ -90,4 +110,19 @@
     </div>
 
 
+    
+
+    
+
+    <div class="site-section bg-image overlay" style="background-image: url('frontend/images/hero_1.jpg')">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 text-center">
+            <h2 class="font-weight-bold text-white">Join and Trip With Us</h2>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ut, doloremque quo molestiae nesciunt officiis veniam, beatae dignissimos!</p>
+            <p class="mb-0"><a href="#" class="btn btn-primary text-white py-3 px-4">Get In Touch</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
 @endsection

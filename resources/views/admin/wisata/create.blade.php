@@ -66,7 +66,7 @@
   <div class="form-group row">
     <label for="text2" class="col-4 col-form-label"><i class="fa fa-info-circle"></i> Deskripsi</label>
     <div class="col-8">
-      <input id="text2" name="deksripsi" type="text" class="form-control @error('deksripsi') is-invalid @enderror">
+      <input id="text2" name="deksripsi" type="text" class="form-control @error('deksripsi') is-invalid @enderror" placeholder="Masukkan deskripsi">
       @error('deksripsi')
                   <div class="invalid-feedback">
                     {{$message}}
@@ -75,9 +75,20 @@
     </div>
   </div>
   <div class="form-group row">
+    <label for="text3" class="col-4 col-form-label"><i class="fa fa-map-marker"></i> Kota</label>
+    <div class="col-8">
+      <input id="text3" name="kota" type="text" class="form-control @error('kota') is-invalid @enderror" placeholder="Masukkan kota">
+      @error('kota')
+      <div class="invalid-feedback">
+        {{$message}}
+      </div>
+      @enderror
+    </div>
+  </div>
+  <div class="form-group row">
     <label for="text3" class="col-4 col-form-label"><i class="fa fa-map-marker"></i> Alamat</label>
     <div class="col-8">
-      <input id="text3" name="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror">
+      <input id="text3" name="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror" placeholder="Masukkan alamat">
       @error('alamat')
                   <div class="invalid-feedback">
                     {{$message}}

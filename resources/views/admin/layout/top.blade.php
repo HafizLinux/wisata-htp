@@ -33,11 +33,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!"> Hello </a></li>
+                        <li><a class="dropdown-item" href="#!"> Hello, {{ Session::get('name_admin') }} </a></li>
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">logout</a></li>
+                        <li><a class="dropdown-item" href="{{ url('admin/auth/logout') }}">logout</a></li>
                     </ul>
                 </li>
             </ul>

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
+use App\Models\Wisata;
 
 class TripsController extends Controller
 {
@@ -11,8 +13,16 @@ class TripsController extends Controller
      */
     public function index()
     {
-        //
-        return view ('trips');
+        $trips = Wisata::all();
+        return view('trips', compact('trips'));
+    }
+
+    public function detail($id)
+    {
+        dd($id);
+        $id = Crypt::decryptString($id);
+        $trips = Wisata::where('id', $id)->first();
+        return view('trips-detail', compact('trips'));
     }
 
     /**

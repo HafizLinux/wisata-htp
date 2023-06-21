@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Wisata;
 use Illuminate\Support\Facades\DB;
-use PDF;
-// use RealRashid\SweetAlert\Facades\Alert;
+use Barryvdh\DomPDF\Facade\PDF;
+use Illuminate\Console\View\Components\Alert;
 
 class WisataController extends Controller
 {
@@ -38,6 +38,7 @@ class WisataController extends Controller
         $request->validate([
             'nama' => 'required|max:45',
             'deksripsi' => 'required',
+            'kota' => 'required',
             'alamat' => 'nullable|string|min:4',
             'foto' => 'nullable|image|mimes:png,jps,jpeg,gif,svg|max:2048',
         ],
@@ -59,19 +60,18 @@ class WisataController extends Controller
         DB::table('table_wisata')->insert([
             'nama' => $request->nama,
             'deksripsi' => $request->deksripsi,
+            'kota' => $request->kota,
             'alamat' => $request->alamat,
             'foto' => $fileName,
-
-
         ]);
         // Alert::success('Wisata', 'Berhasil menambahkan data wisata');
-        return redirect('admin/wisata');
+        return redirect('admin/wisata')->with('success', 'Berhasil menambahkan data wisata');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show( $id)
+    public function show(string $id)
     {
         //
         $wisata = DB::table('table_wisata')->where('id', $id)->get();
@@ -94,7 +94,7 @@ class WisataController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request)
+    public function update(Request $request, string $id)
     {
         //
         $request->validate([
@@ -128,7 +128,7 @@ class WisataController extends Controller
 
 
         ]);
-        // Alert::info('Wisata', 'Berhasil Mengedit data wisata');
+        Alert::info('Wisata', 'Berhasil Mengedit data wisata');
         return redirect('admin/wisata');
     }
 
@@ -140,6 +140,14 @@ class WisataController extends Controller
         //
         DB::table('table_wisata')->where('id', $id)->delete();
         // Alert::info('Wisata', 'Berhasil Menghapus data wisata');
-        return redirect('admin/wisata');
+        return redirect('admin/wisata')->with('success', 'Berhasil Menghapus data wisata');
+    }
+
+    public function exportPDF() {
+        $data = Wisata::all();
+    
+        $pdf = Pdf::loadView('admin.wisata.wisataPDF', compact('data'));
+
+        return $pdf->download('export_wisata.pdf');
     }
 }

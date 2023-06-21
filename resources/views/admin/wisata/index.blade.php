@@ -24,7 +24,7 @@
         <a href="{{url('admin/wisata/create')}}" class="btn btn-primary btn-sm">Tambah</a>
     </div>
     <div class="card-header">
-                            <a href="{{url('admin/wisata/wisataPDF')}}" class="btn btn-success btn-sm" target="_blank">Eksport PDF</a>
+                            <a href="{{url('admin/wisata/export-wisata-pdf')}}" class="btn btn-success btn-sm" target="_blank">Eksport PDF</a>
                             </div>
     <div class="card-body">
         <table id="datatablesSimple">
@@ -33,6 +33,7 @@
                     <th>No</th>
                     <th>Nama</th>
                     <th>Deksripsi</th>
+                    <th>Kota</th>
                     <th>Alamat</th>
                     <th>Foto</th>
                     <th>Action</th>
@@ -43,6 +44,7 @@
                     <th>No</th>
                     <th>Nama</th>
                     <th>Deksripsi</th>
+                    <th>Kota</th>
                     <th>Alamat</th>
                     <th>Foto</th>
                     <th>Action</th>
@@ -58,6 +60,7 @@
                     <td>{{$no}}</td>
                     <td>{{$w->nama}}</td>
                     <td>{{$w->deksripsi}}</td>
+                    <td>{{$w->kota}}</td>
                     <td>{{$w->alamat}}</td>
                     <td>
                         @empty($w->foto)

@@ -19,18 +19,17 @@
             </tr>
         </thead>
         <tbody>
-    @php $no = 1; @endphp
-    @foreach($wisata as $data)
-    <tr>
-        <td>{{ $no++ }}</td>
-        <td>{{ $data->nama }}</td>
-        <td>{{ $data->deksripsi }}</td>
-        <td>{{ $data->alamat }}</td>
-        <td><img height="50" width="100" src="admin/image/{{$data->foto}}"></td>
-    </tr>
-    @endforeach
-</tbody>
-
+            @php $no = 1; @endphp
+            @foreach($data as $row)
+                <tr>
+                    <td>{{ $no++ }}</td>
+                    <td>{{ $row->nama }}</td>
+                    <td>{{ $row->deksripsi }}</td>
+                    <td>{{ $row->alamat }}</td>
+                    <td><img height="50" width="100" src="admin/image/{{$row->foto}}"></td>
+                </tr>
+            @endforeach
+        </tbody>
     </table>
 </body>
 </html>

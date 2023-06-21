@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Pengunjung;
 use App\Models\Wisata;
 use Illuminate\Http\Request;
+use Barryvdh\DomPDF\Facade\PDF;
 
 class UlasanController extends Controller
 {
@@ -64,14 +65,14 @@ class UlasanController extends Controller
             'wisata_id'=> $request->wisata_id,
             // 'tanggal' => $request->tanggal,
         ]);
-        // Alert::success('Ulasan', 'Berhasil menambahkan data ulasan');
+        Alert::success('Ulasan', 'Berhasil menambahkan data ulasan');
         return redirect('admin/ulasan');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show( $id)
+    public function show(string $id)
     {
         //
         $ulasan = Ulasan::join('table_pengunjung', 'table_ulasan.pengunjung_id', '=', 'table_pengunjung.id')
@@ -98,7 +99,7 @@ class UlasanController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request)
+    public function update(Request $request, string $id)
     {
         //
         $request->validate([
@@ -114,7 +115,7 @@ class UlasanController extends Controller
             'wisata_id'=> $request->wisata_id,
             // 'tanggal' => $request->tanggal,
         ]);
-        // Alert::info('Ulasan', 'Berhasil Mengedit data ulasan');
+        Alert::info('Ulasan', 'Berhasil Mengedit data ulasan');
         return redirect('admin/ulasan');
     }
 
@@ -125,7 +126,18 @@ class UlasanController extends Controller
     {
         //
         DB::table('table_ulasan')->where('id', $id)->delete();
-        // Alert::info('Ulasan', 'Berhasil Menghapus data ulasan');
+        Alert::info('Ulasan', 'Berhasil Menghapus data ulasan');
         return redirect('admin/ulasan');
+    }
+
+    public function exportPDF() {
+        $data = Ulasan::join('table_pengunjung', 'table_ulasan.pengunjung_id', '=', 'table_pengunjung.id')
+        ->join('table_wisata', 'table_ulasan.wisata_id', '=', 'table_wisata.id')
+        ->select('table_ulasan.*', 'table_pengunjung.nama as pengunjung', 'table_wisata.nama as wisata')
+        ->get();
+    
+        $pdf = Pdf::loadView('admin.ulasan.ulasanPDF', compact('data'));
+
+        return $pdf->download('export_ulasan.pdf');
     }
 }

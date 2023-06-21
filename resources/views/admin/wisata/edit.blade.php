@@ -50,6 +50,12 @@
               </div>
             </div>
             <div class="form-group row">
+              <label for="kota" class="col-md-4 col-form-label text-md-right">Kota</label>
+              <div class="col-md-8">
+                <input id="kota" name="kota" type="text" class="form-control" value="{{$w->kota}}">
+              </div>
+            </div>
+            <div class="form-group row">
               <label for="alamat" class="col-md-4 col-form-label text-md-right">Alamat</label>
               <div class="col-md-8">
                 <input id="alamat" name="alamat" type="text" class="form-control" value="{{$w->alamat}}">

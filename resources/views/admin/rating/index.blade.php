@@ -53,11 +53,11 @@
         <a href="{{url('admin/rating/create')}}" class="btn btn-primary btn-sm">Tambah</a>
     </div>
     <div class="card-header">
-                            <a href="{{url('admin/rating/ratingPDF')}}" class="btn btn-danger btn-sm" target="_blank">Eksport PDF</a>
-                            <!-- <a href="{{url('admin/rating/exportexcel')}}" class="btn btn-success btn-sm">Eksport To Excel</a>
+                            <a href="{{url('admin/rating/export-rating-pdf')}}" class="btn btn-danger btn-sm" target="_blank">Eksport PDF</a>
+                            <a href="{{url('admin/rating/exportexcel')}}" class="btn btn-success btn-sm">Eksport To Excel</a>
                             <button type="button" class="btn  btn-sm btn-warning" data-toggle="modal" data-target="#exampleModal">
                              Import To excel
-                            </button> -->
+                            </button>
                             </div>
     <div class="card-body">
         <table id="datatablesSimple">
@@ -81,12 +81,10 @@
             </tfoot>
             <!-- pemanggilan isi database -->
             <tbody>
-                @php
-                $no = 1;
-                @endphp
+                @php $no = 1; @endphp
                 @foreach($rating as $r)
                 <tr>
-                    <td>{{$no}}</td>
+                    <td>{{$no++}}</td>
                     <td>{{$r->pengunjung}}</td>
                     <td>{{$r->wisata}}</td>
                     <td>{{$r->nama}}</td>

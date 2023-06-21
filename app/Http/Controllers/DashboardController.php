@@ -8,6 +8,10 @@ use App\Models\Ulasan;
 use App\Models\Rating;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Session;
+
+session_id("pariwisata");
+session_start();
 
 class DashboardController extends Controller
 {

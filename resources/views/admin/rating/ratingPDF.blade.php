@@ -21,9 +21,9 @@
 @php
                 $no = 1;
                 @endphp
-                @foreach($rating as $r)
+                @foreach($data as $r)
                 <tr>
-                    <td>{{$no}}</td>
+                    <td>{{$no++}}</td>
                     <td>{{$r->pengunjung}}</td>
                     <td>{{$r->wisata}}</td>
                     <td>{{$r->nama}}</td>

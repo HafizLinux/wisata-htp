@@ -7,21 +7,39 @@
   <div class="row justify-content-center text-center">
     <div class="col-md-7">
       <div class="heading-39101 mb-5">
-        <span class="backdrop text-center">See Our Recomendations</span>
-        <span class="subtitle-39191">See Our Recomendations</span>
-        <h3>Choose Your Dream Vacation Spot</h3>
+        <span class="backdrop text-center">Journey</span>
+        <span class="subtitle-39191">Journey</span>
+        <h3>Your Journey Starts Here</h3>
       </div>
     </div>
   </div>
   <div class="row">
+    <!-- <div class="col-md-4">
+      <div id="weatherapi-weather-widget-1"></div><script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=3037591&wid=1&tu=2&div=weatherapi-weather-widget-1' async></script><noscript><a href="https://www.weatherapi.com/weather/q/pangandaran-3037591" alt="Hour by hour Pangandaran weather">10 day hour by hour Pangandaran weather</a></noscript>
+    </div> -->
+    @forelse($trips as $row)
     <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+      <div class="listing-item">
+        <div class="listing-image">
+          <img src="{{asset('admin/image/'.$row['foto'])}}" alt="Image" class="img-fluid" style="height: 300px">
+        </div>
+        <div class="listing-item-content">
+          <a class="px-3 mb-3 category bg-primary" href="{{ url('trips/'.Crypt::encryptString($row->id)) }}">$200.00</a>
+          <h2 class="mb-1"><a href="trip-single.html">{{ $row->nama }}</a></h2>
+        </div>
+      </div>
+    </div>
+    @empty
+    <center><h3>Data tidak tersedia</h3></center>
+    @endforelse
+    <!-- <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
       <div class="listing-item">
         <div class="listing-image">
           <img src="{{asset('frontend/images/img_1.jpg')}}" alt="Image" class="img-fluid">
         </div>
         <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">Rp2000.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">Air Terjun Randusari</a></h2>
+          <a class="px-3 mb-3 category bg-primary" href="#">$200.00</a>
+          <h2 class="mb-1"><a href="trip-single.html">Dignissimos debitis</a></h2>
         </div>
       </div>
     </div>
@@ -32,8 +50,8 @@
           <img src="{{asset('frontend/images/img_2.jpg')}}" alt="Image" class="img-fluid">
         </div>
         <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">Rp5000.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">Pantai Singkil Indah</a></h2>
+          <a class="px-3 mb-3 category bg-primary" href="#">$390.00</a>
+          <h2 class="mb-1"><a href="trip-single.html">Consectetur adipisicing</a></h2>
         </div>
       </div>
     </div>
@@ -86,7 +104,7 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
 
 </div>
 </div>

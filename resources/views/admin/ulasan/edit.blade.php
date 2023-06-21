@@ -95,7 +95,17 @@
                     </select>
                 </div>
             </div>
-            
+            <!-- <div class="form-group row">
+                <label for="text3" class="col-4 col-form-label">Tanggal</label>
+                <div class="col-8">
+                    <input id="text3" name="tanggal" type="date" class="form-control" value="{{$u->tanggal}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-4 col-8">
+                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div> -->
             <div class="form-group text-center">
             <button name="submit" type="submit" class="btn btn-primary">Update</button>
           </div>

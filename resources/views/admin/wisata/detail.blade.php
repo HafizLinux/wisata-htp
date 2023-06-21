@@ -51,6 +51,7 @@
         <p><i class="fas fa-id-badge"></i> <b>ID:</b> {{$w->id}}</p>
         <p><i class="fas fa-heading"></i> <b>Nama:</b> {{$w->nama}}</p>
         <p><i class="fas fa-info-circle"></i> <b>Deskripsi:</b> {{$w->deksripsi}}</p>
+        <p><i class="fas fa-map-marker-alt"></i> <b>Kota:</b> {{$w->kota}}</p>
         <p><i class="fas fa-map-marker-alt"></i> <b>Alamat:</b> {{$w->alamat}}</p>
       </div>
       <input type="hidden" value="{{$w->id}}" />

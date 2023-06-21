@@ -20,12 +20,12 @@
         </thead>
         <tbody>
             @php $no = 1; @endphp
-            @foreach($ulasan as $data)
+            @foreach($data as $row)
             <tr>
                 <td>{{$no++}}</td>
-                <td>{{$data->pengunjung}}</td>
-                <td>{{$data->wisata}}</td>
-                <td>{{$data->komentar}}</td>
+                <td>{{$row->pengunjung}}</td>
+                <td>{{$row->wisata}}</td>
+                <td>{{$row->komentar}}</td>
                 
             </tr>
             @endforeach
