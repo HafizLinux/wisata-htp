@@ -7,9 +7,9 @@
   <div class="row justify-content-center text-center">
     <div class="col-md-7">
       <div class="heading-39101 mb-5">
-        <span class="backdrop text-center">Journey</span>
-        <span class="subtitle-39191">Journey</span>
-        <h3>Your Journey Starts Here</h3>
+        <span class="backdrop text-center">See Our Recomendations</span>
+        <span class="subtitle-39191">See Our Recomendations</span>
+        <h3>Choose Your Dream Vacation Spot</h3>
       </div>
     </div>
   </div>
@@ -20,8 +20,8 @@
           <img src="{{asset('frontend/images/img_1.jpg')}}" alt="Image" class="img-fluid">
         </div>
         <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">$200.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">Dignissimos debitis</a></h2>
+          <a class="px-3 mb-3 category bg-primary" href="#">Rp2000.00</a>
+          <h2 class="mb-1"><a href="trip-single.html">Air Terjun Randusari</a></h2>
         </div>
       </div>
     </div>
@@ -32,8 +32,8 @@
           <img src="{{asset('frontend/images/img_2.jpg')}}" alt="Image" class="img-fluid">
         </div>
         <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">$390.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">Consectetur adipisicing</a></h2>
+          <a class="px-3 mb-3 category bg-primary" href="#">Rp5000.00</a>
+          <h2 class="mb-1"><a href="trip-single.html">Pantai Singkil Indah</a></h2>
         </div>
       </div>
     </div>

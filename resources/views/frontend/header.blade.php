@@ -47,7 +47,7 @@
             <div class="col-3 ">
               <div class="site-logo">
                 <a href="index.html" class="font-weight-bold">
-                    <img src="{{asset('frontend/images/logo.png')}}" alt="Image" class="img-fluid">
+                  <img src="{{asset('frontend/images/logo.png')}}" alt="Image" class="img-fluid" style="width: 164px; height: 51px;">
                 </a>
               </div>
             </div>
@@ -61,7 +61,7 @@
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="#" class="nav-link">Home</a></li>
+                  <li class="active"><a href="/" class="nav-link">Home</a></li>
                   <li><a href="{{url('/tentang')}}" class="nav-link">Tentang</a></li>
                   <li><a href="{{url('/trips')}}" class="nav-link">Wisata</a></li>
                   <li><a href="{{url('/review')}}" class="nav-link">Ulasan</a></li>
@@ -77,18 +77,26 @@
       </header>
 
     <div class="ftco-blocks-cover-1">
-    <div class="site-section-cover overlay" style="background-image: url('frontend/images/hero_1.jpg')">
+    <div class="site-section-cover overlay" style="background-image: url('frontend/images/bg/img1.jpg')">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-5" data-aos="fade-right">
-              <h1 class="mb-3 text-white">Let's Enjoy The Wonders of Nature</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
-              <p class="d-flex align-items-center">
-                <a href="https://vimeo.com/191947042" data-fancybox class="play-btn-39282 mr-3"><span class="icon-play"></span></a> 
-                <span class="small">Watch the video</span>
-              </p>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-8" data-aos="fade-right">
+              <p class="text-center" style="color: #305973">Vacation Platform</p>
+              <h1 class="mb-3 text-white text-center">TAKE ONLY MEMORIES, LEAVE ONLY FOOTPRINTS</h1>
+              <p class="text-center">Treat our planet with respect, especially while traveling. Things like eco-tourism, carbon offsets, and environmental footprints need more attention!</p>
+              <div class="d-flex justify-content-center">
+                <a class="btn btn-custom text-center" href="{{url('/trips')}}" role="button">Explore Now!</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <style>
+      .btn-custom {
+        background-color: #EF7E56; /* Your desired background color */
+        border-color: #EF7E56; /* Your desired border color */
+        color: #ffffff; /* Your desired text color */
+      }
+    </style>
