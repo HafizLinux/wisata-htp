@@ -161,7 +161,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="{{ asset('admin/image/'.$trips->foto) }}" alt="{{$trips->foto}}" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                <img src="{{ asset('admin/image/'.$trips->foto) }}" alt="{{$trips->foto}}" class="img-thumbnail" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
             </div>
         </div>
     </div>

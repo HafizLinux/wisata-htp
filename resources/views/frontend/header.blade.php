@@ -79,7 +79,7 @@
       </header>
 
     <div class="ftco-blocks-cover-1">
-    <div class="site-section-cover overlay" style="background-image: url('frontend/images/hero_1.jpg')">
+    <div class="site-section-cover overlay" style="background-image: url('/frontend/images/hero_1.jpg')">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-5" data-aos="fade-right">

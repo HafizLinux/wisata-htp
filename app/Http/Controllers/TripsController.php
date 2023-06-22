@@ -19,8 +19,7 @@ class TripsController extends Controller
 
     public function detail($id)
     {
-        dd($id);
-        $id = Crypt::decryptString($id);
+
         $trips = Wisata::where('id', $id)->first();
         return view('trips-detail', compact('trips'));
     }

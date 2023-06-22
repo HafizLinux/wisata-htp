@@ -24,88 +24,14 @@
           <img src="{{asset('admin/image/'.$row['foto'])}}" alt="Image" class="img-fluid" style="height: 300px">
         </div>
         <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="{{ url('trips/'.Crypt::encryptString($row->id)) }}">$200.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">{{ $row->nama }}</a></h2>
+          <a class="px-3 mb-3 category bg-primary" href="#">$200.00</a>
+          <h2 class="mb-1"><a href="{{ url('trips/'.$row->id) }}">{{ $row->nama }}</a></h2>
         </div>
       </div>
     </div>
     @empty
     <center><h3>Data tidak tersedia</h3></center>
     @endforelse
-    <!-- <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
-      <div class="listing-item">
-        <div class="listing-image">
-          <img src="{{asset('frontend/images/img_1.jpg')}}" alt="Image" class="img-fluid">
-        </div>
-        <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">$200.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">Dignissimos debitis</a></h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
-      <div class="listing-item">
-        <div class="listing-image">
-          <img src="{{asset('frontend/images/img_2.jpg')}}" alt="Image" class="img-fluid">
-        </div>
-        <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">$390.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">Consectetur adipisicing</a></h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
-      <div class="listing-item">
-        <div class="listing-image">
-          <img src="{{asset('frontend/images/img_3.jpg')}}" alt="Image" class="img-fluid">
-        </div>
-        <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">$180.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">Temporibus aperiam</a></h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
-      <div class="listing-item">
-        <div class="listing-image">
-          <img src="{{asset('frontend/images/img_4.jpg')}}" alt="Image" class="img-fluid">
-        </div>
-        <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">$600.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">Expedita fugiat</a></h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
-      <div class="listing-item">
-        <div class="listing-image">
-          <img src="{{asset('frontend/images/img_5.jpg')}}" alt="Image" class="img-fluid">
-        </div>
-        <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">$330.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">Consectetur adipisicing</a></h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
-      <div class="listing-item">
-        <div class="listing-image">
-          <img src="{{asset('frontend/images/img_6.jpg')}}" alt="Image" class="img-fluid">
-        </div>
-        <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">$450.00</a>
-          <h2 class="mb-1"><a href="trip-single.html">Consectetur Amet</a></h2>
-        </div>
-      </div>
-    </div>
-
-  </div> -->
-
 </div>
 </div>
 
