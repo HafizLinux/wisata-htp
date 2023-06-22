@@ -39,7 +39,7 @@
         <p><i class="fas fa-user"></i> <b>Pengunjung:</b> {{$u->pengunjung}}</p>
         <p><i class="fas fa-user-check"></i> <b>Wisata:</b> {{$u->wisata}}</p>
         <p><i class="fas fa-comment"></i> <b>Ulasan:</b> {{$u->komentar}}</p>
-        <!-- <p><i class="fas fa-calendar"></i> <b>Tanggal:</b> {{$u->tanggal}}</p> -->
+       
       </div>
     </div>
     @endforeach

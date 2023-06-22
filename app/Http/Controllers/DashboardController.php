@@ -23,6 +23,8 @@ class DashboardController extends Controller
         $ulasan     = Ulasan::count();
         $rating     = Rating::count();
         $totalUsers = DB::table('users')->count();
+        $totalWisata = DB::table('table_wisata')->count();
+        $totalUlasan = DB::table('table_ulasan')->count();
         $ar_user = DB::table('users')
         ->selectRaw('role, count(role) as jumlah')
         ->groupBy('role')
@@ -31,7 +33,7 @@ class DashboardController extends Controller
         ->selectRaw('kota, count(kota) as jumlah')
         ->groupBy('kota')
         ->get();
-         return view('admin.dashboard', compact('wisata','ulasan','rating', 'ar_user', 'ar_wilayah', 'totalUsers'));
+         return view('admin.dashboard', compact('wisata','ulasan','rating', 'ar_user', 'ar_wilayah', 'totalUsers','totalWisata','totalUlasan'));
     }
 
     /**

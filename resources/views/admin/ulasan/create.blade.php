@@ -77,22 +77,7 @@
                   @enderror
                 </div>
               </div>
-              <!-- <div class="form-group row">
-                <label for="text3" class="col-4 col-form-label">Tanggal</label>
-                <div class="col-8">
-                  <input id="text3" name="tanggal" type="date" class="form-control @error('tanggal') is-invalid @enderror">
-                  @error('tanggal')
-                  <div class="invalid-feedback">
-                    {{$message}}
-                  </div>
-                  @enderror
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="offset-md-3 col-md-9">
-                  <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </div> -->
+              
               <div class="form-group row">
               <div class="offset-md-3 col-md-9">
                 <button name="submit" type="submit" class="btn btn-primary">Submit</button>

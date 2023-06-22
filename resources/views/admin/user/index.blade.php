@@ -10,8 +10,7 @@
                         </ol>
                         <div class="card mb-4">
                             <div class="card-body">
-                                DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
-                                <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
+                               Selamat Datang di Halaman Pengguna
                                 .
                             </div>
                         </div>
@@ -21,7 +20,7 @@
                                 DataTable Example -->
                                 <!-- membuat tombol mengarahkan ke file produk_form.php -->
                                
-                                <a href="{{url('admin/jabatan/create')}}" class="btn btn-primary btn-sm">Tambah</a>
+                                <!-- <a href="{{url('admin/jabatan/create')}}" class="btn btn-primary btn-sm">Tambah</a> -->
                                 
                             </div>
                             <div class="card-body">

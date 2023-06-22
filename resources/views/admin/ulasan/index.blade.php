@@ -39,8 +39,7 @@
 </ol>
 <div class="card mb-4">
     <div class="card-body">
-        DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
-        <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
+        Selamat Datang dihalaman Ulasan
         .
     </div>
 </div>
@@ -93,7 +92,7 @@
                     <td>{{$u->pengunjung}}</td>
                     <td>{{$u->wisata}}</td>
                     <td>{{$u->komentar}}</td>
-                    <!-- <td>{{$u->tanggal}}</td> -->
+                    
                     <td>
                         <form action="#" method="POST">
                             <a class="btn btn-info btn-sm" href="{{url('admin/ulasan/show/'.$u->id)}}">Detail</a>

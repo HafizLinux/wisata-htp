@@ -49,13 +49,13 @@ class UlasanController extends Controller
             'pengunjung_id' => 'required|integer',
             'wisata_id' => 'required|integer',
             'komentar' => 'required',
-            // 'tanggal' => 'required',
+           
         ],
         [
             'pengunjung.required' => 'pengunjung wajib diisi',
             'wisata.required' => 'wisata lahir wajib diisi',
             'komentar.required' => 'Ulasan wajib diisi',
-            // 'tanggal.required' => 'Tanggal wajib diisi',
+           
             
         ]);
         //
@@ -63,9 +63,9 @@ class UlasanController extends Controller
             'komentar' => $request->komentar,
             'pengunjung_id'=> $request->pengunjung_id,
             'wisata_id'=> $request->wisata_id,
-            // 'tanggal' => $request->tanggal,
+           
         ]);
-        Alert::success('Ulasan', 'Berhasil menambahkan data ulasan');
+        // Alert::success('Ulasan', 'Berhasil menambahkan data ulasan');
         return redirect('admin/ulasan');
     }
 
@@ -106,16 +106,16 @@ class UlasanController extends Controller
             'pengunjung_id' => 'required|integer',
             'wisata_id' => 'required|integer',
             'komentar' => 'required',
-            // 'tanggal' => 'required',
+           
         ]);
         //
         DB::table('table_ulasan')->where('id', $request->id)->update([
             'komentar' => $request->komentar,
             'pengunjung_id'=> $request->pengunjung_id,
             'wisata_id'=> $request->wisata_id,
-            // 'tanggal' => $request->tanggal,
+           
         ]);
-        Alert::info('Ulasan', 'Berhasil Mengedit data ulasan');
+        // Alert::info('Ulasan', 'Berhasil Mengedit data ulasan');
         return redirect('admin/ulasan');
     }
 
@@ -126,7 +126,7 @@ class UlasanController extends Controller
     {
         //
         DB::table('table_ulasan')->where('id', $id)->delete();
-        Alert::info('Ulasan', 'Berhasil Menghapus data ulasan');
+        // Alert::info('Ulasan', 'Berhasil Menghapus data ulasan');
         return redirect('admin/ulasan');
     }
 
