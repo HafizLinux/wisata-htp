@@ -46,7 +46,7 @@
 
             <div class="col-3 ">
               <div class="site-logo">
-                <a href="index.html" class="font-weight-bold">
+                <a href="{{url('/front')}}" class="font-weight-bold">
                     <img src="{{asset('frontend/images/logo.png')}}" alt="Image" class="img-fluid" style="width: 164px; height: 51px;">
                 </a>
               </div>
@@ -61,13 +61,13 @@
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="#" class="nav-link">Home</a></li>
+                  <li class="active"><a href="{{url('/front')}}" class="nav-link">Home</a></li>
                   <li><a href="{{url('/tentang')}}" class="nav-link">Tentang</a></li>
                   <li><a href="{{url('/trips')}}" class="nav-link">Wisata</a></li>
                   <li><a href="{{url('/review')}}" class="nav-link">Ulasan</a></li>
                  
                   <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{url('pengunjung/auth/login')}}">Login</a></li>
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{url('pengunjung/auth/register')}}">Register</a></li>
+                  {{-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{url('pengunjung/auth/register')}}">Register</a></li> --}}
                 </ul>
               </nav>
             </div>

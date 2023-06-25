@@ -15,7 +15,7 @@
               and dive into crystal-clear waters to witness stunning marine life. A nature vacation in Indonesia promises unforgettable experiences and a chance to rejuvenate amidst the wonders of the natural world.</p>
           </div>
           <div class="col-md-6" data-aos="fade-right">
-            <img src="{{asset('frontend/images/indo1.png')}}" alt="Custom-sized image" class="img-fluid" >
+            <img src="{{asset('frontend/images/indo1.png')}}" alt="Custom-sized image" class="img-fluid" width="500px" >
           </div>
         </div>
       </div>

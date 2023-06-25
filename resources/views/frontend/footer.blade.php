@@ -7,11 +7,11 @@
               <div class="col-lg-6 ml-auto">
                 <h2 class="footer-heading mb-4">Quick Links</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Tentang</a></li>
-                  <li><a href="#">Wisata</a></li>
-                  <li><a href="#">Ulasan</a></li>
-                  <li><a href="#">Login/Register</a></li>
+                  <li><a href="{{url('/front')}}">Home</a></li>
+                  <li><a href="{{url('/tentang')}}">Tentang</a></li>
+                  <li><a href="{{url('/trips')}}">Wisata</a></li>
+                  <li><a href="{{url('/review')}}">Ulasan</a></li>
+                  <li><a href="{{url('pengunjung/auth/login')}}">Login/Register</a></li>
                 </ul>
               </div>
               <div class="col-lg-6">
