@@ -150,4 +150,5 @@ class WisataController extends Controller
 
         return $pdf->download('export_wisata.pdf');
     }
+    
 }

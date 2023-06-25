@@ -165,7 +165,7 @@ class AuthController extends Controller
                         }
                         
                         // Redirect pages
-                        return redirect()->to('ratings');
+                        return redirect()->to('front');
                     }
                 }
             }

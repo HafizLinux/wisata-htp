@@ -13,6 +13,7 @@ use App\Http\Controllers\TentangController;
 use App\Http\Controllers\TripsController;
 use App\Http\Controllers\UserController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,12 +34,13 @@ use App\Http\Controllers\UserController;
 Route::get('/', function () {
     return view('front');
 });
-Route::get('/front', [TentangController::class, 'index']);
+Route::get('/front', [FrontController::class, 'index']);
 Route::get('/tentang', [TentangController::class, 'index']);
 Route::get('/trips', [TripsController::class, 'index']);
 Route::get('/trips/{id}', [TripsController::class, 'detail']);
 Route::get('/review', [ReviewController::class, 'index']);
-Route::get('/ratings', [RatingsController::class, 'index']);
+Route::post('/review/store', [ReviewController::class, 'store']);
+// Route::get('/ratings', [RatingsController::class, 'index']);
 
 Route::prefix('pengunjung')->name('pengunjung.')->group(function() {
     // Auth page pengunjung
@@ -74,6 +76,10 @@ Route::prefix('admin')->name('admin.')->group(function(){
         Route::get('/wisata/show/{id}', [WisataController::class, 'show']);
         Route::get('/wisata/delete/{id}', [WisataController::class, 'destroy']);
         Route::get('/wisata/export-wisata-pdf', [WisataController::class, 'exportPDF'])->name('export_wisata.pdf');
+
+        Route::get('/review', [ReviewController::class, 'index_admin']);
+        Route::get('/review/delete/{id}', [ReviewController::class, 'destroy']);
+        Route::get('/review/export-review-pdf', [ReviewController::class, 'exportPDF'])->name('export_review.pdf');
 
         Route::get('/ulasan', [UlasanController::class, 'index']);
         Route::get('ulasan/create', [UlasanController::class, 'create']);

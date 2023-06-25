@@ -65,7 +65,7 @@
                   <li><a href="{{url('/tentang')}}" class="nav-link">Tentang</a></li>
                   <li><a href="{{url('/trips')}}" class="nav-link">Wisata</a></li>
                   <li><a href="{{url('/review')}}" class="nav-link">Ulasan</a></li>
-                  <!-- <li><a href="{{url('/ratings')}}" class="nav-link">Rating</a></li> -->
+                 
                   <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{url('pengunjung/auth/login')}}">Login</a></li>
                   <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{url('pengunjung/auth/register')}}">Register</a></li>
                 </ul>

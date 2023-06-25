@@ -11,7 +11,7 @@ class Ulasan extends Model
     protected $table = 'table_ulasan';
     protected $primaryKey = 'id';
     protected $fillable = [
-        'komentar', 'tanggal', 'pengunjung_id', 'wisata_id'
+        'komentar','pengunjung_id', 'wisata_id'
     ];
     
     public function pengunjung() {
