@@ -40,9 +40,9 @@
             <div class="person-29191 text-center">
               <img src="{{asset('frontend/images/team/denis.jpg')}}" alt="Image" class="img-fluid mb-4">
               <div class="px-4">
-                <h2 class="mb-2">John Doe</h2>
-                <p class="caption mb-4">Staff</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, maiores? Eos alias fugit eius, repudiandae molestias error</p>
+                <h2 class="mb-2">Deni Saputra</h2>
+                <p class="caption mb-4">Backend Developer and Database Designer</p>
+                <p>“Ruby is rubbish! PHP is phpantastic!” – Nikita Popov</p>
                 <div class="social_29128 mt-5">
                </div>
               </div>
@@ -53,9 +53,9 @@
             <div class="person-29191 text-center">
               <img src="{{asset('frontend/images/team/hafis.jpg')}}" alt="Image" class="img-fluid mb-4">
               <div class="px-4">
-                <h2 class="mb-2">Jean Doe</h2>
-                <p class="caption mb-4">Staff</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, maiores? Eos alias fugit eius, repudiandae molestias error</p>
+                <h2 class="mb-2">Hafiz Herla Firmansyah</h2>
+                <p class="caption mb-4">Backend Developer and Designer Database</p>
+                <p>“Make it work, make it right, make it fast.” – Kent Beck</p>
                 <div class="social_29128 mt-5">
                </div>
               </div>
@@ -64,11 +64,11 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="person-29191 text-center">
-              <img src="{{asset('frontend/images/person_3.jpg')}}" alt="Image" class="img-fluid mb-4">
+              <img src="{{asset('frontend/images/team/naya.jpg')}}" alt="Image" class="img-fluid mb-4 img-fluid custom-size">
               <div class="px-4">
-                <h2 class="mb-2">Claire Dormey</h2>
-                <p class="caption mb-4">Staff</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, maiores? Eos alias fugit eius, repudiandae molestias error</p>
+                <h2 class="mb-2">Denaya Prama Sidya</h2>
+                <p class="caption mb-4">Frontend and UI/UX Designer</p>
+                <p>“Website without visitors is like a ship lost in the horizon.”― Dr. Christopher Dayagdag</p>
                 <div class="social_29128 mt-5">
                </div>
               </div>
@@ -77,11 +77,11 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="person-29191 text-center">
-              <img src="{{asset('frontend/images/person_3.jpg')}}" alt="Image" class="img-fluid mb-4">
+              <img src="{{asset('frontend/images/team/daniel.jpg')}}" alt="Image" class="img-fluid mb-4">
               <div class="px-4">
-                <h2 class="mb-2">Claire Dormey</h2>
-                <p class="caption mb-4">Staff</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, maiores? Eos alias fugit eius, repudiandae molestias error</p>
+                <h2 class="mb-2">Daniel Adi Saputra</h2>
+                <p class="caption mb-4">Database Designer</p>
+                <p>“Measuring programming progress by lines of code is like measuring aircraft building progress by weight.”-Bill Gates</p>
                 <div class="social_29128 mt-5">
                </div>
               </div>
@@ -90,11 +90,11 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="person-29191 text-center">
-              <img src="{{asset('frontend/images/person_3.jpg')}}" alt="Image" class="img-fluid mb-4">
+              <img src="{{asset('frontend/images/team/arya.jpg')}}" alt="Image" class="img-fluid mb-4 img-fluid custom-size">
               <div class="px-4">
-                <h2 class="mb-2">Claire Dormey</h2>
-                <p class="caption mb-4">Staff</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, maiores? Eos alias fugit eius, repudiandae molestias error</p>
+                <h2 class="mb-2">Arya Maulana Hidayatullah</h2>
+                <p class="caption mb-4">Project Manager</p>
+                <p>“Software always remains softly for End users! But sometimes hardly to developers!”-Mohamed Saad</p>
                 <div class="social_29128 mt-5">
                </div>
               </div>

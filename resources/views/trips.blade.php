@@ -7,9 +7,8 @@
   <div class="row justify-content-center text-center">
     <div class="col-md-7">
       <div class="heading-39101 mb-5">
-        <span class="backdrop text-center">Journey</span>
-        <span class="subtitle-39191">Journey</span>
-        <h3>Your Journey Starts Here</h3>
+        <span class="backdrop text-center">VACATION</span>
+        <span class="subtitle-39191">Your Amazing Places are Here</span>
       </div>
     </div>
   </div>
@@ -24,7 +23,7 @@
           <img src="{{asset('admin/image/'.$row['foto'])}}" alt="Image" class="img-fluid" style="height: 300px">
         </div>
         <div class="listing-item-content">
-          <a class="px-3 mb-3 category bg-primary" href="#">$200.00</a>
+          <a class="px-3 mb-3 category bg-primary" href="#">Check This Out</a>
           <h2 class="mb-1"><a href="{{ url('trips/'.$row->id) }}">{{ $row->nama }}</a></h2>
         </div>
       </div>
@@ -35,23 +34,5 @@
 </div>
 </div>
 
-
-<div class="site-section py-5">
-<div class="container">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <div class="heading-39101 mb-5">
-        <span class="backdrop">Story</span>
-        <span class="subtitle-39191">Discover Story</span>
-        <h3>Our Story</h3>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quae expedita fugiat quo incidunt, possimus temporibus aperiam eum, quaerat sapiente.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis enim a pariatur molestiae.</p>
-    </div>
-    <div class="col-md-6" data-aos="fade-right">
-      <img src="{{asset('frontend/images/traveler.jpg')}}" alt="Image" class="img-fluid">
-    </div>
-  </div>
-</div>
 </div>
 @endsection
